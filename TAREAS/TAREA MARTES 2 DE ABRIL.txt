@@ -1,0 +1,7 @@
+COMANDO PARA CAMBIAR LA DESCRIPCION DEL COMMIT 
+
+El comando git commit --amend:
+*Utilizar amend para remendar un commit puede modificar el commit más reciente (enmendar) en la misma rama. 
+
+
+
