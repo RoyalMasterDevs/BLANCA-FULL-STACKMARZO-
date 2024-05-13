@@ -1,3 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+:root {
+  --colorbase: #135d66;
+  --colorheader: #092635;
+  --colorfooter: #77b0aa;
+  --colormain: #092635;
+}
 body {
-  background-color: palevioletred;
+  background-color: var(--colorbase);
+}
+
+header {
+  background-color: var(--colorheader);
+  padding: 15px;
+  margin-top: auto;
+}
+
+footer {
+  background-color: var(--colorfooter);
+  padding: 5px;
+  text-align: end;
+}
+
+.caja {
+  background-color: var(--colormain);
+  padding: 70px;
+  margin: 80px;
+}
+p {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.texto {
+}
+
+.titulos {
+  color: aliceblue;
+  font-size: 50px;
+  text-align: center;
+}
+
+.menu {
+  text-decoration: none;
+}
+
+h3 {
+  color: white;
+}
+
+footer > ul {
+  font-size: 70px;
+  padding: 5px 20px;
+  margin: 5px;
+}
+
+.contacto {
+  justify-content: space-between;
 }

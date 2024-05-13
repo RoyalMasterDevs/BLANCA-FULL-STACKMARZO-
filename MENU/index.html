@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5ce556c387.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Hamburguesa</title>
+  </head>
+
+  <body>
+    <div id="menu">
+      <div id="menu-bar" onclick="menuOnClick()">
+        <i></i>
+      </div>
+      <nav class="hamburger" id="nav">
+        <ul>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Proyectos</a></li>
+          <li><a href="#">Clientes</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="menu-bg" id="menu-bg"></div>
+
+    <div class="nav_menu">
+      <li class="menuLink text-style-underline"><a href="#">Servicios</a></li>
+      <li class="menuLink text-style-underline"><a href="#">Nosotros</a></li>
+      <li class="menuLink text-style-underline"><a href="#">Proyectos</a></li>
+      <li class="menuLink text-style-underline"><a href="#">Clientes</a></li>
+      <li class="menuLink text-style-underline"><a href="#">Contacto</a></li>
+    </div>
+    <!-- <script src="./app.js"></script> -->
+    <script>
+      function menuOnClick() {
+        //Esta línea selecciona el elemento con el id "nav" y
+        // alterna la presencia de la clase "change" en su lista de clases.
+
+        document.getElementById("nav").classList.toggle("change");
+
+        //Esta línea selecciona el elemento con el id "menu-bg" y
+        // alterna la presencia de la clase "change-bg" en su lista de clases.
+
+        document.getElementById("menu-bg").classList.toggle("change-bg");
+        //selecciona el primer elemento con la clase "hamburger".
+        var hamburger = document.querySelector(".hamburger");
+        //selecciona el elemento con el id "menu-bar"
+        var menu_bar = document.getElementById("menu-bar");
+
+        if (
+          // se está controlando la visibilidad del menú basado en su estilo de visualización.
+          hamburger.style.display === "none" ||
+          hamburger.style.display === ""
+        ) {
+          //Si el menú está oculto (su estilo de visualización es "none" o está vacío),
+          //este código cambia su estilo de visualización a "block", lo que lo hace visible.
+          hamburger.style.display = "block";
+          // cambia completamente la clase del elemento, eliminando cualquier clase anterior
+          // y estableciendo estas nuevas clases.
+
+          menu_bar.className = "fas fa-times"; // Cambiar la clase completamente
+        } else {
+          hamburger.style.display = "none";
+          menu_bar.className = "fas fa-bars"; // Cambiar la clase completamente
+        }
+      }
+    </script>
+  </body>
+</html>
