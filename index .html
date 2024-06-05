@@ -6,72 +6,107 @@
     <meta
       name="description"
       content="Nuestra tienda de ropa es la mejor del mercado"
-      
     />
-    <link rel="stylesheet" href="styles.css">
-    <title>mi primer pagina html</title>
-    <title>estructura html</title>
-    <title>estructura2 html</title>
+    <script
+      src="https://kit.fontawesome.com/5ce556c387.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>PORTAFOLIO</title>
   </head>
   <body>
     <header>
-      <div>
-        <h1>este es un h1 </h1>
-        <h2>este es un h2</h2>
-        <h3>este es un h3</h3>
-        <h4>este es un h4</h4>
-        <h5>este es un h5</h5>
-        <h6>este es un h6</h6>
-      </div>
-      <nav>
+      <nav class="menu">
         <ul>
-            <li><a href="index.html">INDEX </a></li>
-            <li><a href="nosotros">NOSOSTROS</a></li>
-            <li><a href=""></a></A></li>
+          <li><a href="index.html">INICIO </a></li>
+          <li><a href="#PROYECTOS">PROYECTOS </a></li>
+          <li><a href="#TECNOLOGIAS">TECNOLOGIAS</a></li>
+          <li><a href="#CERTIFICADOS">CERTIFICADOS</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-        <div>este es un main</div>
-        <h2>esto es una tabla</h2>
-        <table>
-            <th>esto es el header</th>
-            <tbody>
-                <tr> <td>esto es una fila</td>
-            </tr>
-            </tbody>
-        </table>
+      <section id="INICIO" class="caja">
+        <h2 class="titulos">PRESENTACIÓN</h2>
+        <div>
+          <div class=""foto>
+            <img src="img/FOTO.png" alt="" />
+          </div>
+          <div class="texto">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis unde nesciunt sunt veniam, placeat officiis ex beatae
+              quam a est praesentium iste amet. Nisi soluta, doloremque sed
+              optio dignissimos temporibus?
+            </p>
+          </div>
+        </div>
+      </section>
+
+    <main>
+      <section id="PROYECTOS"  class="caja" >
+        <h2 class="titulos">PROYECTOS</h2>
+        <div>
+          <div>
+            <img src="" alt="" />
+            <h3>proyecto 1</h3>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3>proyecto 2</h3>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3>proyecto 3</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="TECNOLOGIAS" class="caja">
+        <h2 class="titulos">TECNOLOGIAS</h2>
+        <div>
+          <div>
+            <img src="" alt="" />
+            <h3>HTML</h3>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3>CSS</h3>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3>JAVASCRIPT</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="CERTIFICADOS" class="caja">
+        <h2 class="titulos">CERTIFICADOS</h2>
+        <div>
+          <div>
+            <img src="" alt="" />
+            <h3>CISCO</h3>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3>JAVA</h3>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3>JAVASCRIPT</h3>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-        <div>este es un footer</div>
-        <section>
-            <form action="#" method="POST">
-                ETIQUETAS Y ENTRADAS
-                <div>
-                    <LAbel for="nombre">TU NOMBRE</LAbel>
-                <INput id="nombre" type="text"></INput>
-
-                </div>
-              <div>
-                  <label for="telefono">TU TELEFONO </label>
-                <INput id="telefono" type="number"></INput>
-
-              </div>
-<div>
-    <label for="ciudad">CIUDAD</label>
-    <input type="text" type="text">
-</div>
-<div>
-    <label for="mensaje">MENSAJE</label>
-    <input type="text">
-    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-</div>
-              
-            </form>
-
-       </section>
-    </footer>
-    
   </body>
+
+  <footer >
+    <ul>
+     <a href="#"></a> <i class="fa-brands fa-linkedin"></i></a>
+       <a href="#"></a><i class="fa-solid fa-envelope"></i></a>
+      <a href="#"></a> <i class="fa-brands fa-telegram"></i></a>
+       <a href="#"></a><i class="fa-brands fa-github"></i></a>
+    </ul>
+  </footer>
 </html>

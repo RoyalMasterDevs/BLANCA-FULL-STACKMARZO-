@@ -1,0 +1,12 @@
+{
+  "name": "fullstackmarzo",
+  "version": "1.0.0",
+  "description": "https://www.figma.com/file/3GNcMmiRnj73nhsszYMrdO/DISE%C3%91O?type=design&node-id=0-1&mode=design&t=YSNr4eIprbnVMKHO-0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
