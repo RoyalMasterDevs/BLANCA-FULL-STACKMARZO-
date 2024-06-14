@@ -8,7 +8,8 @@ body {
     border: solid 8px;
     border-color: #fff;
     border-radius: 25px;
-    margin: 50px;
+    width: 70%;
+    margin: 100px;
     height: 800px;
     padding: 25px;
     text-align: center;
@@ -23,6 +24,7 @@ body {
 
 h1 {
     color: #01204E;
+    font-size: 35px;
 }
 
 img {
@@ -32,8 +34,8 @@ img {
 }
 
 p {
-    font-size: 22px;
-    color: #FF3EA5;
+    font-size: 40px;
+    color: #fff;
 }
 
 .centrar {
@@ -78,7 +80,7 @@ p {
 
     .reproductor {
         width: 75%;
-        margin: 20px 18px;
+        margin: 20px 10px 10px 8px;
     }
 
     .centrar i {

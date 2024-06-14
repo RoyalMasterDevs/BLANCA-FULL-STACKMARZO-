@@ -63,12 +63,12 @@ audioPlayer.addEventListener("timeupdate", () => timeUpdate());
 audioPlayer.addEventListener("ended", () => ended());
 
 const togglePlaySong = () => {
-    if (audioPlayer.paused) {
+  if (audioPlayer.paused) {
         audioPlayer.play();
-        btnPlayIcon.classList.replace("fa-solid fa-circle-play");
+        btnPlayIcon.classList.replace("fa-circle-play", "fa-circle-pause");
     } else {
         audioPlayer.pause();
-        btnPlayIcon.classList.replace("bi-pause-fill", "fa-solid fa-circle-play");
+        btnPlayIcon.classList.replace("fa-circle-pause", "fa-circle-play");
     }
 };
 

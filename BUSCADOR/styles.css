@@ -3,32 +3,25 @@
     background: rgb(33, 153, 116);
         background: linear-gradient(90deg, rgba(33, 153, 116, 0.9632645294445903) 0%, rgba(63, 173, 130, 1) 28%, rgba(17, 108, 173, 0.8596230728619573) 100%);
  }
- img {
-     width: 50%;
-     width: 500px;
-     height: 500px;
-     margin-left: 80px;
-     border-radius: 25px;
 
-
-
- }
  h2 {
 
 
      display: block;
+     font-size: 40px;
 
  }
 
 .formulario  {
     text-align: center;
     background-color:#102C57;
- width: 90%;
+     width: 95%;
    
   padding: 1px;  
     margin: 50px;
-    height: 700px;
-    font-size: 35px;
+   
+    height: 300px;
+    font-size: 45px;
     display: block;
    
     align-items: center;
@@ -37,82 +30,61 @@
 
 }
 
+.resultado {
+    background-color:#55AD9B;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    text-align: center;
 
+}
 
- .informacion {
-    text-align: justify;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-left: 1px;
-    margin-right: 1px;
-    padding-left: 1px;
-    padding-right: 1px;
-    font-size: 30px;
- }
-  
- .datos {
-
-    width: 100%;
-    padding: 20px;
-    margin: 10px;
-    width: 250px;
- }
-
- .imagen {
-    width: 50%;
-
- }
-
- 
-
- .datos1 {
-    width:48% ;
-    margin-right: 15px;
-    align-content: center;
-    margin-bottom: 4px;
-    margin-left: -5.7px;
-    
-
- }
-
- .datos2 {
-     padding-left: -10px;
-     margin-left: -8px;
-     width: 45%;
-     align-content: center;
- }
 
  #buscador {
 
-    width: 120%;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    height: 100px;
  }
 
  @media (max-width: 360px) {
-     body {
-         width: 100%;
-        
+    
 
-     }
+    body {
+           width: 100%;
+        }
+        
+    h2 {
+        font-size: 25px;
+        margin: 1px;
+        padding: 2px;
+      }
+
+
 .formulario
       {
-         width: 200%;
-       
-         margin:  50px 0.5px  50px 40px;
-   
-     }
+         width: 100%;
+         margin: 0;
+        
+      }
 
-     img {
-              width: 50%;
-              width: 250px;
-              height: 500px;
-              margin-left: 80px;
-              border-radius: 25px;
-    
-    
-    
-          }
+.resultado {
+            background-color: #55AD9B;
+             padding-bottom: 10px;
+           }
+  
+
+#buscador {
+        font-size: 20px;
+      margin-bottom: 10px;
+         }
+     
+ #resultado {
+            border-radius: 25px;
+            text-align: left;
+            margin-bottom: 20px;
+             }
+                   
+   
      
  }
