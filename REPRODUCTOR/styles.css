@@ -1,7 +1,12 @@
 body {
-
     background-color: #C738BD;
-
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 .reproductor {
@@ -9,17 +14,11 @@ body {
     border-color: #fff;
     border-radius: 25px;
     width: 70%;
-    margin: 100px;
-    height: 800px;
+    max-width: 800px;
     padding: 25px;
     text-align: center;
     display: block;
-    justify-content: center;
     background-color: #850F8D;
-
-
-
-
 }
 
 h1 {
@@ -30,7 +29,8 @@ h1 {
 img {
     margin: 20px;
     padding: 25px;
-
+    width: 100%;
+    max-width: 300px;
 }
 
 p {
@@ -39,56 +39,130 @@ p {
 }
 
 .centrar {
-    justify-items: center;
+    justify-content: center;
     margin: 10px;
     padding: 8px;
-
-
-
+    display: flex;
+    align-items: center;
 }
 
 .centrar i {
-
     font-size: 40px;
     color: #C738BD;
     transition: transform 0.2s ease;
-
-
-
+    margin: 0 10px;
 }
 
 .centrar i:hover {
     transform: scale(1.3);
-  
     color: #E49BFF;
     transition: ease 2s;
-
-
-
-
 }
 
 .centrar span {
     color: #FF3EA5;
 }
 
-@media (max-width: 360px) {
-    body {
-        width: 100%;
+a {
+    text-decoration: none;
+    color: white;
+}
 
+.button_slide {
+    text-decoration: none;
+    margin-top: 1rem;
+    background-color: #55AD9B;
+    border: 3px solid rgb(216, 2, 134);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 17px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    transition: ease-out 0.4s;
+}
+
+.button_slide:hover {
+    color: var(--blanco);
+}
+
+.slide_down:hover {
+    box-shadow: inset 0 100px 0 0 #D80286;
+}
+
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #D80286;
+}
+
+.slide_left:hover {
+    box-shadow: inset 0 0 0 50px #D80286;
+}
+
+.slide_diagonal:hover {
+    box-shadow: inset 400px 50px 0 0 #D80286;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .reproductor {
+        width: 90%;
     }
 
-    .reproductor {
-        width: 75%;
-        margin: 20px 10px 10px 8px;
+    p {
+        font-size: 30px;
     }
 
     .centrar i {
+        font-size: 30px;
+    }
+}
 
+@media (max-width: 480px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    p {
         font-size: 20px;
+    }
 
+    .centrar i {
+        font-size: 25px;
+    }
 
+    .reproductor {
+        width: 95%;
+        padding: 15px;
+    }
 
+    img {
+        width: 80%;
+        padding: 10px;
+    }
+}
 
+@media (max-width: 360px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .centrar i {
+        font-size: 20px;
+    }
+
+    .reproductor {
+        width: 100%;
+        padding: 10px;
+    }
+
+    img {
+        width: 70%;
+        padding: 5px;
     }
 }
