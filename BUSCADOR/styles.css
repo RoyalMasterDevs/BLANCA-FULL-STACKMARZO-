@@ -1,0 +1,149 @@
+body {
+    background: linear-gradient(90deg, rgba(33, 153, 116, 0.96) 0%, rgba(63, 173, 130, 1) 28%, rgba(17, 108, 173, 0.86) 100%);
+}
+
+h2 {
+    display: block;
+    font-size: 40px;
+}
+
+.formulario {
+    text-align: center;
+    background-color: #102C57;
+    width: 95%;
+    padding: 1px;
+    margin: 5px 10px 5px 50px;
+    height: 300px;
+    font-size: 1.5rem;
+    display: block;
+    align-items: center;
+    color: white;
+    border-radius: 30px;
+}
+
+.resultado {
+    font-size: 1.5rem;
+    background-color: #55AD9B;
+    color: white;
+    padding-bottom: 10px;
+    border-radius: 25px;
+    text-align: center;
+    margin: 3rem;
+}
+
+#buscador {
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.button_slide {
+    text-decoration: none;
+    margin-top: 1rem;
+    background-color: #55AD9B;
+    border: 3px solid rgb(216, 2, 134);
+    border-radius: 0px;
+    padding: 18px 36px;
+    display: inline-block;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 17px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #D80286;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.button_slide:hover {
+    color: var(--blanco);
+}
+
+.slide_down:hover {
+    box-shadow: inset 0 100px 0 0 #D80286;
+}
+
+.slide_right:hover {
+    box-shadow: inset 400px 0 0 0 #D80286;
+}
+
+.slide_left:hover {
+    box-shadow: inset 0 0 0 50px #D80286;
+}
+
+.slide_diagonal:hover {
+    box-shadow: inset 400px 50px 0 0 #D80286;
+}
+
+@media (max-width: 768px) {
+    .formulario {
+        width: 90%;
+        margin: 5px auto;
+        font-size: 1.2rem;
+    }
+
+    .resultado {
+        margin: 2rem;
+        font-size: 1.2rem;
+    }
+
+    #buscador {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .formulario {
+        width: 95%;
+        margin: 5px auto;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .resultado {
+        margin: 1rem;
+        font-size: 1rem;
+    }
+
+    #buscador {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 360px) {
+    body {
+        width: 100%;
+    }
+
+    .formulario {
+        width: 100%;
+        margin: 2px 5px;
+        font-size: 0.8rem;
+    }
+
+    .resultado {
+        margin: 1rem;
+        font-size: 0.8rem;
+    }
+
+    #buscador {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+}

@@ -1,75 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script
-      src="https://kit.fontawesome.com/5ce556c387.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>Hamburguesa</title>
-  </head>
 
-  <body>
-    <div id="menu">
-      <div id="menu-bar" onclick="menuOnClick()">
-        <i></i>
-      </div>
-      <nav class="hamburger" id="nav">
-        <ul>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Nosotros</a></li>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Clientes</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://kit.fontawesome.com/5ce556c387.js" crossorigin="anonymous"></script>
+  <title>Hamburguesa</title>
+</head>
+
+<body>
+  <div id="menu">
+    <div id="menu-bar" onclick="menuOnClick()">
+      <i></i>
     </div>
+    <nav class="hamburger" id="nav">
+      <ul>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Proyectos</a></li>
+        <li><a href="#">Clientes</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
 
-    <div class="menu-bg" id="menu-bg"></div>
+  <div class="menu-bg" id="menu-bg"></div>
 
-    <div class="nav_menu">
-      <li class="menuLink text-style-underline"><a href="#">Servicios</a></li>
-      <li class="menuLink text-style-underline"><a href="#">Nosotros</a></li>
-      <li class="menuLink text-style-underline"><a href="#">Proyectos</a></li>
-      <li class="menuLink text-style-underline"><a href="#">Clientes</a></li>
-      <li class="menuLink text-style-underline"><a href="#">Contacto</a></li>
+  <div class="nav_menu">
+    <li class="menuLink text-style-underline"><a href="#">Servicios</a></li>
+    <li class="menuLink text-style-underline"><a href="#">Nosotros</a></li>
+    <li class="menuLink text-style-underline"><a href="#">Proyectos</a></li>
+    <li class="menuLink text-style-underline"><a href="#">Clientes</a></li>
+    <li class="menuLink text-style-underline"><a href="#">Contacto</a></li>
+  </div>
+  
+
+  <main>
+    <div id="contenido">
+  
+  
+      <section id="PRESENTACION">
+        <h1 class="titulos">Blanca Luna Allende</h1>
+  
+        <div class="presentacion">
+  
+          <div class="foto">
+            <img src="./img/foto2.png" alt="Descripción de la imagen" class="imagen-tamanio" />
+          </div>
+          <div class="texto">
+  
+            <p>
+              Soy un desarrollador web junior apasionado por el aprendizaje constante y la creación de soluciones
+              innovadoras en el
+              mundo digital.
+            </p>
+            <p>
+              Lo que realmente me distingue es mi entusiasmo y dedicación por el desarrollo web. Siempre estoy en busca de
+              nuevas
+              oportunidades para mejorar mis habilidades y contribuir a proyectos significativos. Estoy convencido de que
+              mi actitud
+              positiva y mi deseo constante de aprender me permitirán crecer rápidamente en este campo.
+  
+  
+            </p>
+          </div>
+        </div>
+  
+  
+      </section>
+      <section id="PROYECTOS">
+        <h2 class="titulos">PROYECTOS</h2>
+        <div class="proyectos">
+  
+  
+  
+  
+  
+  
+          <div class="card card_mobie">
+            <div class="card__title">
+              <h2>BUSCADOR DE AUTOS</h2>
+            </div>
+            <div class="card__body">
+              <img class="card__img" src="./img/buscador.png" alt="img_body" />
+  
+              <div class="button_slide slide_left">IR A PROYECTO</div>
+            </div>
+  
+          </div>
+  
+  
+          <div class="card card_mobie">
+            <div class="card__title">
+              <h2>BUSCAR LETRAS DE CANCIONES</h2>
+            </div>
+            <div class="card__body">
+              <img class="card__img" src="./img/letras.png" alt="img_body" />
+              <div class="button_slide slide_left">IR A PROYECTO</div>
+            </div>
+  
+          </div>
+  
+          <div class="card card_mobie">
+            <div class="card__title">
+              <h2>REPRODUCTOR</h2>
+            </div>
+            <div class="card__body">
+              <img class="card__img" src="./img/preproductor.png" alt="img_body" />
+              <div class="button_slide slide_left">IR A PROYECTO</div>
+            </div>
+  
+          </div>
+  
+          <div class="card card_mobie">
+            <div class="card__title">
+              <h2>Este es un titulo</h2>
+            </div>
+            <div class="card__body">
+              <img class="card__img" src="./img/imagen3.jpg" alt="img_body" />
+              <div class="button_slide slide_left">IR A PROYECTO</div>
+            </div>
+  
+          </div>
+  
+  
+  
+  
+        </div>
+  
+      </section>
+  
+      <section id="TECNOLOGIAS">
+        <h2 class="titulos">TECNOLOGIAS</h2>
+        <div class="tecnologias">
+          <div class="img_tecnologia">
+            <img src="./img/html5.png" alt="html5">
+          </div>
+          <div class="img_tecnologia">
+            <img src="./img/css3.png" alt="css3">
+          </div>
+          <div class="img_tecnologia">
+            <img src="./img/js.png" alt="js">
+          </div>
+  
+          <div class="img_tecnologia">
+            <img src="./img/sass.png" alt="sass">
+          </div>
+          <div class="img_tecnologia">
+            <img src="./img/figma.png" alt="figm">
+          </div>
+          <div class="img_tecnologia">
+            <img src="./img/notion.png" alt="notion">
+          </div>
+          <div class="img_tecnologia">
+            <img src="./img/bash.png" alt="bash">
+          </div>
+          <div class="img_tecnologia">
+            <img src="./img/git.png" alt="git">
+          </div>
+          <div class="img_tecnologia">
+            <img src="./img/sql.png" alt="sql">
+          </div>
+  
+  
+        </div>
+  
+  
+      </section>
+  
+  
+      <section id="CERTIFICADOS">
+        <h2 class="titulos">CERTIFICADOS</h2>
+        <div class="certificado">
+          <div class="img_certificado">
+            <img src="./img/certi1.jpg" alt="certificado">
+          </div>
+          <div class="img_certificado">
+            <img src="./img/certi2.jpg" alt="certificado">
+          </div>
+  
+          <div class="img_certificado">
+            <img src="./img/certi3.jpg" alt="certificado">
+          </div>
+          <div class="img_certificado">
+            <img src="./img/certi4.jpg" alt="certificado">
+          </div>
+          <div class="img_certificado">
+            <img src="./img/certi5.jpg" alt="certificado">
+          </div>
+          <div class="img_certificado">
+            <img src="./img/certi6.jpg" alt="certificado">
+          </div>
+          <div class="img_certificado">
+            <img src="./img/certi7.jpg" alt="certificado">
+          </div>
+          <div class="img_certificado">
+            <img src="./img/certi8.jpg" alt="certificado">
+          </div>
+  
+  
+        </div>
+  
+  
+      </section>
     </div>
-    <!-- <script src="./app.js"></script> -->
-    <script>
-      function menuOnClick() {
-        //Esta línea selecciona el elemento con el id "nav" y
-        // alterna la presencia de la clase "change" en su lista de clases.
+  
+  </main>
+  <!-- <script src="./app.js"></script> -->
+  <script>
+    function menuOnClick() {
+      //Esta línea selecciona el elemento con el id "nav" y
+      // alterna la presencia de la clase "change" en su lista de clases.
 
-        document.getElementById("nav").classList.toggle("change");
+      document.getElementById("nav").classList.toggle("change");
 
-        //Esta línea selecciona el elemento con el id "menu-bg" y
-        // alterna la presencia de la clase "change-bg" en su lista de clases.
+      //Esta línea selecciona el elemento con el id "menu-bg" y
+      // alterna la presencia de la clase "change-bg" en su lista de clases.
 
-        document.getElementById("menu-bg").classList.toggle("change-bg");
-        //selecciona el primer elemento con la clase "hamburger".
-        var hamburger = document.querySelector(".hamburger");
-        //selecciona el elemento con el id "menu-bar"
-        var menu_bar = document.getElementById("menu-bar");
+      document.getElementById("menu-bg").classList.toggle("change-bg");
+      //selecciona el primer elemento con la clase "hamburger".
+      var hamburger = document.querySelector(".hamburger");
+      //selecciona el elemento con el id "menu-bar"
+      var menu_bar = document.getElementById("menu-bar");
 
-        if (
-          // se está controlando la visibilidad del menú basado en su estilo de visualización.
-          hamburger.style.display === "none" ||
-          hamburger.style.display === ""
-        ) {
-          //Si el menú está oculto (su estilo de visualización es "none" o está vacío),
-          //este código cambia su estilo de visualización a "block", lo que lo hace visible.
-          hamburger.style.display = "block";
-          // cambia completamente la clase del elemento, eliminando cualquier clase anterior
-          // y estableciendo estas nuevas clases.
+      if (
+        // se está controlando la visibilidad del menú basado en su estilo de visualización.
+        hamburger.style.display === "none" ||
+        hamburger.style.display === ""
+      ) {
+        //Si el menú está oculto (su estilo de visualización es "none" o está vacío),
+        //este código cambia su estilo de visualización a "block", lo que lo hace visible.
+        hamburger.style.display = "block";
+        // cambia completamente la clase del elemento, eliminando cualquier clase anterior
+        // y estableciendo estas nuevas clases.
 
-          menu_bar.className = "fas fa-times"; // Cambiar la clase completamente
-        } else {
-          hamburger.style.display = "none";
-          menu_bar.className = "fas fa-bars"; // Cambiar la clase completamente
-        }
+        menu_bar.className = "fas fa-times"; // Cambiar la clase completamente
+      } else {
+        hamburger.style.display = "none";
+        menu_bar.className = "fas fa-bars"; // Cambiar la clase completamente
       }
-    </script>
-  </body>
+    }
+  </script>
+</body>
+
 </html>

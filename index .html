@@ -1,112 +1,245 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Nuestra tienda de ropa es la mejor del mercado"
-    />
-    <script
-      src="https://kit.fontawesome.com/5ce556c387.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="styles.css" />
-    <title>PORTAFOLIO</title>
-  </head>
-  <body>
-    <header>
-      <nav class="menu">
-        <ul>
-          <li><a href="index.html">INICIO </a></li>
-          <li><a href="#PROYECTOS">PROYECTOS </a></li>
-          <li><a href="#TECNOLOGIAS">TECNOLOGIAS</a></li>
-          <li><a href="#CERTIFICADOS">CERTIFICADOS</a></li>
-        </ul>
-      </nav>
-    </header>
 
-    <main>
-      <section id="INICIO" class="caja">
-        <h2 class="titulos">PRESENTACIÓN</h2>
-        <div>
-          <div class=""foto>
-            <img src="img/FOTO.png" alt="" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>portafolio</title>
+  <link rel="shortcut icon" href="./img/icono.png" />
+ 
+  <script src="https://kit.fontawesome.com/5ce556c387.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="normalice.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header class="cabecera">
+    <nav class="menu">
+
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <i></i>
+        </div>
+        <nav class="hamburger" id="nav">
+          <ul>
+            <li><a href="#PRESENTACION">PRESENTACIÓN</a></li>
+            <li><a href="#PROYECTOS">PROYECTOS</a></li>
+            <li><a href="#TECNOLOGIAS">TECNOLOGIAS</a></li>
+            <li><a href="#CERTIFICADOS">CERTIFICADOS</a></li>
+            <li><a href="#CONTACTO">CONTACTO</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="menu-bg" id="menu-bg"></div>
+
+      <div class="nav_menu"></div>
+      <img src="./img/icono.png" alt="">
+      <div class="nav_menu">
+
+        <li><a href="#PRESENTACION">PRESENTACIÓN</a></li>
+        <li><a href="#PROYECTOS">PROYECTOS</a></li>
+        <li><a href="#TECNOLOGIAS">TECNOLOGIAS</a></li>
+        <li><a href="#CERTIFICADOS">CERTIFICADOS</a></li>
+        <li><a href="#CONTACTO">CONTACTO</a></li>
+
+      </div>
+      <!-- <script src="./app.js"></script> -->
+
+      </div>
+    </nav>
+
+
+  </header>
+  <main>
+    <div id="contenido">
+
+
+      <section id="PRESENTACION">
+        <h1 class="titulos">Blanca Luna Allende</h1>
+
+        <div class="presentacion">
+
+          <div class="foto">
+            <img src="./img/foto2.png" alt="Descripción de la imagen" class="imagen-tamanio" />
           </div>
           <div class="texto">
+
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Reiciendis unde nesciunt sunt veniam, placeat officiis ex beatae
-              quam a est praesentium iste amet. Nisi soluta, doloremque sed
-              optio dignissimos temporibus?
+              Soy un desarrollador web junior apasionado por el aprendizaje constante y la creación de soluciones
+              innovadoras en el
+              mundo digital.
+            </p>
+            <p>
+              Lo que realmente me distingue es mi entusiasmo y dedicación por el desarrollo web. Siempre estoy en busca
+              de nuevas
+              oportunidades para mejorar mis habilidades y contribuir a proyectos significativos. Estoy convencido de
+              que mi actitud
+              positiva y mi deseo constante de aprender me permitirán crecer rápidamente en este campo.
+
+
             </p>
           </div>
         </div>
-      </section>
 
-    <main>
-      <section id="PROYECTOS"  class="caja" >
+
+      </section>
+      <section id="PROYECTOS">
         <h2 class="titulos">PROYECTOS</h2>
-        <div>
-          <div>
-            <img src="" alt="" />
-            <h3>proyecto 1</h3>
+        <div class="proyectos">
+
+
+
+
+
+
+          <div class="card card_mobie">
+            <div class="card__title">
+              <h2>BUSCADOR DE AUTOS</h2>
+            </div>
+            <div class="card__body">
+              <img class="card__img" src="./img/buscador.png" alt="img_body" />
+
+              <div class="button_slide slide_left"><a href="./BUSCADOR/index.html">IR A PROYECTO</a></div>
+            </div>
+
           </div>
-          <div>
-            <img src="" alt="" />
-            <h3>proyecto 2</h3>
+
+
+          <div class="card card_mobie">
+            <div class="card__title">
+              <h2>BUSCAR LETRAS DE CANCIONES</h2>
+            </div>
+            <div class="card__body">
+              <img class="card__img" src="./img/letras.png" alt="img_body" />
+             <div class="button_slide slide_left"><a href="./fetchAPI/index.html">IR A PROYECTO</a></div> 
+            </div>
+
           </div>
-          <div>
-            <img src="" alt="" />
-            <h3>proyecto 3</h3>
+
+          <div class="card card_mobie">
+            <div class="card__title">
+              <h2>REPRODUCTOR</h2>
+            </div>
+            <div class="card__body">
+              <img class="card__img" src="./img/preproductor.png" alt="img_body" />
+              <div class="button_slide slide_left"><a href="./REPRODUCTOR/index.html">IR A PROYECTO</a></div>
+            </div>
+
           </div>
+          <div class="card card_mobie">
+            <div class="card__title">
+              <h2>REPRODUCTOR</h2>
+            </div>
+            <div class="card__body">
+              <img class="card__img" src="./img/cripto.png" alt="img_body" />
+              <div class="button_slide slide_left"><a href="./CRIPTOMONEDAS/index.html">IR A PROYECTO</a></div>
+            </div>
+          
+          </div>
+
+
+
+
         </div>
+
       </section>
 
-      <section id="TECNOLOGIAS" class="caja">
+      <section id="TECNOLOGIAS">
         <h2 class="titulos">TECNOLOGIAS</h2>
-        <div>
-          <div>
-            <img src="" alt="" />
-            <h3>HTML</h3>
+        <div class="tecnologias">
+          <div class="img_tecnologia">
+            <img src="./img/html5.png" alt="html5">
           </div>
-          <div>
-            <img src="" alt="" />
-            <h3>CSS</h3>
+          <div class="img_tecnologia">
+            <img src="./img/css3.png" alt="css3">
           </div>
-          <div>
-            <img src="" alt="" />
-            <h3>JAVASCRIPT</h3>
+          <div class="img_tecnologia">
+            <img src="./img/js.png" alt="js">
           </div>
+
+          <div class="img_tecnologia">
+            <img src="./img/sass.png" alt="sass">
+          </div>
+          <div class="img_tecnologia">
+            <img src="./img/figma.png" alt="figm">
+          </div>
+          <div class="img_tecnologia">
+            <img src="./img/notion.png" alt="notion">
+          </div>
+          <div class="img_tecnologia">
+            <img src="./img/bash.png" alt="bash">
+          </div>
+          <div class="img_tecnologia">
+            <img src="./img/git.png" alt="git">
+          </div>
+          <div class="img_tecnologia">
+            <img src="./img/sql.png" alt="sql">
+          </div>
+
+
         </div>
+
+
       </section>
 
-      <section id="CERTIFICADOS" class="caja">
+
+      <section id="CERTIFICADOS">
         <h2 class="titulos">CERTIFICADOS</h2>
-        <div>
-          <div>
-            <img src="" alt="" />
-            <h3>CISCO</h3>
+        <div class="certificado">
+          <div class="img_certificado">
+            <img src="./img/certi1.jpg" alt="certificado">
           </div>
-          <div>
-            <img src="" alt="" />
-            <h3>JAVA</h3>
+          <div class="img_certificado">
+            <img src="./img/certi2.jpg" alt="certificado">
           </div>
-          <div>
-            <img src="" alt="" />
-            <h3>JAVASCRIPT</h3>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
 
-  <footer >
-    <ul>
-     <a href="#"></a> <i class="fa-brands fa-linkedin"></i></a>
-       <a href="#"></a><i class="fa-solid fa-envelope"></i></a>
-      <a href="#"></a> <i class="fa-brands fa-telegram"></i></a>
-       <a href="#"></a><i class="fa-brands fa-github"></i></a>
-    </ul>
+          <div class="img_certificado">
+            <img src="./img/certi3.jpg" alt="certificado">
+          </div>
+          <div class="img_certificado">
+            <img src="./img/certi4.jpg" alt="certificado">
+          </div>
+          <div class="img_certificado">
+            <img src="./img/certi5.jpg" alt="certificado">
+          </div>
+          <div class="img_certificado">
+            <img src="./img/certi6.jpg" alt="certificado">
+          </div>
+          <div class="img_certificado">
+            <img src="./img/certi7.jpg" alt="certificado">
+          </div>
+          <div class="img_certificado">
+            <img src="./img/certi8.jpg" alt="certificado">
+          </div>
+
+
+        </div>
+
+
+      </section>
+    </div>
+
+  </main>
+
+  <footer id="CONTACTO">
+
+    <div class="footer-container">
+      <a href="https://www.linkedin.com/in/blanca-luna-allende-2a7bb8279/recent-activity/all/" target="_blank"
+        class="footer-link"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:blancaallende468@gmail.com" target="_blank" class="footer-link"><i
+          class="fa-solid fa-envelope"></i></a>
+      <a href="https://t.me/your-telegram" target="_blank" class="footer-link"><i class="fa-brands fa-telegram"></i></a>
+      <a href="https://github.com/Blanca-Allende" target="_blank" class="footer-link"><i
+          class="fa-brands fa-github"></i></a>
+
   </footer>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
 </html>
